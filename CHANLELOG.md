@@ -1,6 +1,20 @@
 # Changelog
 
+
+## 0.3.0 2026-08-03
+## Added
+- Implement the header, footer, main elements for the index.html
+- Remove the heading h2 for the index.html and watchlist.html
+
+## 0.2.0 2026-08-02
+## Added
+- Create te frontend folder save all the code related to the frontend
+- Design the CSS styling for the background, font
+
+## 0.1.0 2026-08-01
+## Added
+- Structure the index.html and the watchlist.html basic.
+
 ## 0.0.0 2026-07-31
 ### Added
-Set up the folders project
-Set up the files project
+- Set up the folders project, files project
