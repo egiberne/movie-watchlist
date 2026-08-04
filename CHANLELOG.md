@@ -1,18 +1,25 @@
 # Changelog
 
+## 0.4.0 2026-08-04
+### Added 
+- Implement nav element in watchlist.html
+- Center the hyperlink in the nav element with CSS flex
+- Control the hyperlink background with JS
+
+
 
 ## 0.3.0 2026-08-03
-## Added
+### Added
 - Implement the header, footer, main elements for the index.html
 - Remove the heading h2 for the index.html and watchlist.html
 
 ## 0.2.0 2026-08-02
-## Added
+### Added
 - Create te frontend folder save all the code related to the frontend
 - Design the CSS styling for the background, font
 
 ## 0.1.0 2026-08-01
-## Added
+### Added
 - Structure the index.html and the watchlist.html basic.
 
 ## 0.0.0 2026-07-31

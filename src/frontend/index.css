@@ -11,6 +11,15 @@ header{
     display:flex;
 }
 
-.state{
-    d
+nav{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+
+footer{
+    border: 1px solid #000;
+    height: 15px;
 }
