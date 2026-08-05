@@ -3,7 +3,9 @@
 
 ## 0.5.0 2026-08-04
 ### Changed
-Replace div by section in main element for semantic.
+- Replace div by section in main element for semantic.
+- Center the section element in the main element with flex model.
+- Center element in section with flex model
 
 ## 0.4.0 2026-08-04
 ### Added 
