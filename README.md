@@ -16,3 +16,6 @@ Yet another movie wathlist website
 [CSS Styling](https://developer.mozilla.org/en-US/docs/Web/CSS/How_to/Layout_cookbook/Center_an_element)
 
 [Javascript](https://github.com/javascripteverywhere/cookbook/)
+
+## Version
+0.5.0
