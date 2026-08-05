@@ -1,11 +1,15 @@
 # Changelog
 
+
+## 0.5.0 2026-08-04
+### Changed
+Replace div by section in main element for semantic.
+
 ## 0.4.0 2026-08-04
 ### Added 
 - Implement nav element in watchlist.html
 - Center the hyperlink in the nav element with CSS flex
 - Control the hyperlink background with JS
-
 
 
 ## 0.3.0 2026-08-03
