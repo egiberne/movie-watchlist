@@ -1,10 +1,16 @@
 # Changelog
 
-## 0.6.0 2026-08-04
+## 0.6.1 2026-08-06
 ### Added
-- Implement the search bar in HTML
+Implement the design styling of the search bar in CSS
+### Changed
+Update the search bar structure in HTML
 
-## 0.5.0 2026-08-04
+## 0.6.0 2026-08-06
+### Added
+Implement the search bar component in HTML
+
+## 0.5.0 2026-08-05
 ### Changed
 - Replace div by section in main element for semantic.
 - Center the section element in the main element with flex model.
