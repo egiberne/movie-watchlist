@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.2 2026-08-06
+### Added
+Implement the control of the search bar element in JS
+
 ## 0.6.1 2026-08-06
 ### Added
 Implement the design styling of the search bar in CSS
