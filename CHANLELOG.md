@@ -1,5 +1,11 @@
 # Changelog
 
+
+## 0.7.1 2026-08-07
+### Added
+Implement the CSS styling for the plus-icon element
+
+
 ## 0.7.0 2026-08-07
 ### Added
 Implement the initial state component for the wathlist

@@ -31,9 +31,12 @@ main {
     
 }
 
+.plus-icon{
+    display:flex;
+    flex-direction: row;
+}
 
-
-.state {
+.initial-state {
     display: flex;
     flex-direction: column;
     align-items: center ;
