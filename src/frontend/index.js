@@ -1,8 +1,9 @@
 let currentYear = new Date().getFullYear()
 
 const nav = document.querySelector('nav  > a')
-const state = document.querySelector('.state')
+const initialState = document.querySelector('.initial-state')
 const searchBar = document.getElementById('search-bar')
+const plusIcon = document.getElementById('plus-icon')
 
 nav.style.backgroundColor="yellow"
 state.style.backgroundColor = "yellow"

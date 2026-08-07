@@ -1,10 +1,13 @@
 # Changelog
 
 
+## 0.7.2 2026-08-07
+### Added
+Implement JS statement to control the plus-icon
+
 ## 0.7.1 2026-08-07
 ### Added
 Implement the CSS styling for the plus-icon element
-
 
 ## 0.7.0 2026-08-07
 ### Added
