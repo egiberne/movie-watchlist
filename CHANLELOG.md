@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0 2026-08-07
+### Added
+Implement the initial state component for the wathlist
+### Changed 
+- Modify the heading content to follow the design
+- Modify the *state* `class` and `id` to *initial-state*
+
 ## 0.6.2 2026-08-06
 ### Added
 Implement the control of the search bar element in JS
