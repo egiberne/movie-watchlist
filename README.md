@@ -18,4 +18,4 @@ Yet another movie watchlist website
 [Javascript](https://github.com/javascripteverywhere/cookbook/)
 
 ## Version
-0.8.1
+0.8.2

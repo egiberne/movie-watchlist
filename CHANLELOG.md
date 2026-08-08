@@ -1,13 +1,18 @@
 # Changelog
 
+
+## 0.8.2 2026-08-08
+### Added
+Control in JS, the component *no-data-state*
+
 ## 0.8.1 2026-08-08
 ### Added 
 Design in CSS rule the component, *no-data-state*
 
 ## 0.8.0 2026-08-08
 ### Added 
-- Structure in HTML, a component for copyrighting in the element, *footer*
-- Structure in HTML, the component *no-data-state* 
+- Structure in HTML, the component *no-data-state*
+- Structure in HTML, a component for copyrighting in the element, *footer* 
 ### Changed
 Update the watchlist *section* elements
 
