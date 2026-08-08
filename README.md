@@ -1,10 +1,10 @@
 # Movie Watchlist
 
-Online movie watch list
+A Movie watch list web site
 
 ## Description
 
-Yet another movie wathlist website
+Yet another movie watchlist website
 
 ## Design
 [Figma](https://www.figma.com/design/jhFRdFIdHpRxsDznNXtpXw/Movie-Watchlist?node-id=2-17&t=0j0yurjuPUaqdVMu-0)
@@ -18,4 +18,4 @@ Yet another movie wathlist website
 [Javascript](https://github.com/javascripteverywhere/cookbook/)
 
 ## Version
-0.8.0
+0.8.1

@@ -1,11 +1,15 @@
 # Changelog
 
-## 0.8.0 2026-08-07
+## 0.8.1 2026-08-08
 ### Added 
-- Implement a copyright element
-- Implement the no-data-state element
+Design in CSS rule the component, *no-data-state*
+
+## 0.8.0 2026-08-08
+### Added 
+- Structure in HTML, a component for copyrighting in the element, *footer*
+- Structure in HTML, the component *no-data-state* 
 ### Changed
-Update the watchlist section element
+Update the watchlist *section* elements
 
 ## 0.7.2 2026-08-07
 ### Added
