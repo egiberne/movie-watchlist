@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0 2026-08-07
+### Added 
+- Implement a copyright element
+- Implement the no-data-state element
+### Changed
+Update the watchlist section element
 
 ## 0.7.2 2026-08-07
 ### Added

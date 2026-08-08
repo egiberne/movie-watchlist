@@ -18,4 +18,4 @@ Yet another movie wathlist website
 [Javascript](https://github.com/javascripteverywhere/cookbook/)
 
 ## Version
-0.6.2
+0.8.0
