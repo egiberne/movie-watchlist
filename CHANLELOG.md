@@ -1,9 +1,26 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+- populated-watchlist component
+- family font
+
+
 ## [0.9.0] - 2026-08-09
 ### Added 
 - HTML structure for `populated-state-search-page` component
 - CSS styling for `populated-state-search-page` component
+- JS reference for `populated-state-search-page` component
+- Link for change log reference 
+- Link for versioning reference
+
+### Changed
+- Links related to MDN for HTML, CSS and JS cookbook or howto or guide
+
 
 ## 0.8.2 2026-08-08
 ### Added

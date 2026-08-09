@@ -5,7 +5,7 @@ const initialState = document.querySelector('.initial-state')
 const searchBar = document.getElementById('search-bar')
 const plusIcon = document.getElementById('plus-icon')
 const noDataState = document.getElementById('no-data-state')
-
+const populatedStateSearchPage = document.getElementById('populated-state-search-page')
 
 
 console.log(`
@@ -16,6 +16,7 @@ console.log(`
     search-bar, ${searchBar}
     plus-icon, ${plusIcon}
     no-data-state,  ${noDataState}
+    populated-state-search-page, ${populatedStateSearchPage}
     `)
 
 
