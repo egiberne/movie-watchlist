@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.9.0] - 2026-08-09
+### Added 
+HTML structure for `populated-state-search-page` component
 
 ## 0.8.2 2026-08-08
 ### Added
