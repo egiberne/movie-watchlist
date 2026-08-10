@@ -17,6 +17,7 @@ console.log(`
     plus-icon, ${plusIcon}
     no-data-state,  ${noDataState}
     populated-state-search-page, ${populatedStateSearchPage}
+    font-family : ${document.getElementById('title').style.fontFamily}
     `)
 
 

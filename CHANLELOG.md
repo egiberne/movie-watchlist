@@ -8,7 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - populated-watchlist component
 - family font
 
-
+## [0.10.0+css] - 2026-08-10
+### Added 
+JavaScript font-family reference from element
 
 ## [0.10.0+css] - 2026-08-10
 ### Added 
