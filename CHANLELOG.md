@@ -10,9 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 
 
+## [0.10.0+css] - 2026-08-10
+### Added 
+CSS font-family definition for Google font Inter
+
 ## [0.10.0+html] - 2026-08-10
 ### Added 
-- HTML reference for external Google Font, `inter`
+HTML reference for external Google Font Inter
 
 ## [0.9.0] - 2026-08-09
 ### Added 
