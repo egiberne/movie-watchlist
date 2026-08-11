@@ -6,9 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 - populated-watchlist component
-- family font
+- populated-state-search-page
+- dark theme
 
-## [0.10.0+css] - 2026-08-10
+## [0.11.0] -2026-08-10
+### Added
+CSS styling for header element
+CSS styling for link element 
+
+## [0.10.0+js] - 2026-08-10
 ### Added 
 JavaScript font-family reference from element
 
