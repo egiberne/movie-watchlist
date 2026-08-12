@@ -11,9 +11,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - FAQ section
 
 
+## [0.12.0+css] -2026-08-12
+CSS styling for `populated-wachtlist` component
+
 ## [0.12.0+html] - 2026-08-12 
 ### Added
-HTML structure for `populated-wachtlist` element
+HTML structure for `populated-wachtlist` component
+
 
 ## [0.11.0] - 2026-08-11
 ### Added

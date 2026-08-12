@@ -1,3 +1,5 @@
+/* elements */
+
 *{
     box-sizing: border-box;
 }
@@ -51,24 +53,7 @@ main {
 }
 
 
-.search-bar{
-    display:flex;
-    
-}
-
-.plus-icon{
-    display:flex;
-    flex-direction: row;
-}
-
-.initial-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-content: center;
-}
-
-section > h2 {
+h2 {
     color:#DFDDDD;
     font-weight: 700;
     font-size:18px;
@@ -82,10 +67,49 @@ footer{
     height: 15px;
 }
 
+
+/* classes */
+
+.search-bar{
+    display:flex;
+    
+}
+
+.plus-icon{
+    display:flex;
+    flex-direction: row;
+}
+
+
+.initial-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    background-color:green;
+    width: 550px;
+    height: 779px;
+}
+
 .no-data-state{
+    background-color: orange;
+    width: 550px;
+    height: 779px;
 
 }
 
 .populated-state-search-page{
+
+    background-color: azure;
+    width: 550px;
+    height: 779px;
+
     
+}
+
+
+.populated-watchlist{
+    background-color: azure;
+    width: 550px;
+    height: 779px;
 }
