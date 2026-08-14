@@ -2,14 +2,15 @@
 
 *{
     box-sizing: border-box;
-    margin:0;
+    margin:auto;
 }
 
 body{
-    background-color: #ffff;
+    background-color: #000;
     font-family: Inter, sans-serif;
     width:550px;
     position: relative;
+    
 
     
 }

@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - FAQ section
 - 
 
+## [0.14.0+css] - 2026-08-14
+CSS centering the HTML structure.
 
 ## [0.13.0] - 2026-08-13
 ### Changed
