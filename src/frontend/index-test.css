@@ -1,0 +1,105 @@
+/* elements */
+
+
+body{
+   margin:0;
+   font-family: Inter, sans-serif;
+   color : #FFFF;
+
+
+    
+}
+
+header{
+
+    background : #0e0e0e no-repeat center url("./asset/img/bg.png");
+     
+}
+
+ul{
+    display:flex;
+    list-style-type:none;
+    align-items:center;
+    padding: 80px;
+    gap:100px;
+}
+
+li{
+    cursor:pointer;
+}
+
+ul li:first-child{
+    font-weight: 800;
+    font-size: 42px;
+}
+
+
+h1{
+    
+    
+}
+
+nav{
+  
+}
+
+nav > a {
+    
+
+}
+
+main {
+ 
+}
+
+
+h2 {
+ 
+ 
+  
+
+}
+
+
+footer{
+     
+}
+
+
+/* classes */
+
+
+.search-feature{
+  
+    
+}
+
+.search-bar{
+  
+    
+}
+
+.plus-icon{
+   
+
+}
+.initial-state {
+ 
+}
+
+.no-data-state{
+ 
+
+}
+
+.populated-state-search-page{
+
+ 
+
+    
+}
+
+
+.populated-watchlist{
+   
+}

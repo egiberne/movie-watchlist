@@ -2,12 +2,14 @@
 
 *{
     box-sizing: border-box;
+    margin:0;
 }
 
 body{
     background-color: #ffff;
     font-family: Inter, sans-serif;
     width:550px;
+    position: relative;
 
     
 }
@@ -15,7 +17,7 @@ body{
 header{
     display:flex;
     height:208px;
-    background : #000 no-repeat center url("./asset/img/bg.png");
+    background :  #0e0e0e no-repeat center url("./asset/img/bg.png");
     color : #fff;
     justify-content: center;
     align-items: center;
@@ -71,7 +73,15 @@ footer{
 /* classes */
 
 .search-bar{
+    width: 460px;
+    height: 38px;
     display:flex;
+    position:absolute;
+    top:189px;
+    left: 44px;
+    border:solid gray 1px;
+    border-radius: 6px;
+    background-color: #fff;
     
 }
 

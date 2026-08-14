@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link  href="index.css" rel="stylesheet">
+        <link  href="index-test.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -8,21 +8,28 @@
 
     <body>
         <header>
-            <h1 id="title">Find your film</h1>
             <nav>
-                <a href="watchlist.html" target="_blank">My Watchlist</a>
+                <ul>
+                    <li>
+                        Find your film
+                    </li>           
+                    <li> 
+                        <a href="watchlist.html" target="_blank">My Watchlist</a>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <div id="search-bar" class="search-bar">
-                    <input type="search" placeholder="Blade Runner">
 
-                    <div id="search-bar-sort" class="search-bar-sort">
-                        <input type="checkbox" id="sort-box">
-                        <button>Search</button>
-                    </div>
-        </div>
         <main>
-            
+            <section id="search-bar" class="search-bar">
+                <input type="search" id="seach-bar" >
+
+                <div id="search-control" class="search-control">
+                    <input type="checkbox" id="sort-box">
+
+                    <button>Search</button>
+                </div>
+            </section>
 
 
             <section id="initial-state" class="initial-state">
