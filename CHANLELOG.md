@@ -11,6 +11,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - FAQ section
 - footer section
 
+## [0.15.0+html] - 2026-08-15
+## Changed
+Comment for the footer section.
+
 ## [0.15.0+js] - 2026-08-15
 ### Added
 Watchlist.js file for watchlist.html.
