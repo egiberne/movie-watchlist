@@ -11,10 +11,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - FAQ section
 - footer section
 
+## [0.15.0+js] - 2026-08-15
+### Added
+Watchlist.js file for watchlist.html.
+JS references for `populatedWatchlist`
+### Removed 
+JS references unused in index.js.
+
 ## [0.15.0+css] - 2026-08-15
-CSS rules refactoring for `empty-watchlist` and `initial-state` elements.
+### Changed
+CSS rules for `empty-watchlist` and `initial-state` elements.
 
 ## [0.14.0+css] - 2026-08-14
+### Added
 CSS centering the HTML structure.
 
 ## [0.13.0] - 2026-08-13
