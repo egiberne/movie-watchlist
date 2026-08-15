@@ -11,8 +11,6 @@ body{
     width:550px;
     position: relative;
     
-
-    
 }
 
 header{
@@ -92,7 +90,7 @@ footer{
 }
 
 
-.initial-state {
+.initial-state, .empty-watchlist {
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -106,21 +104,12 @@ footer{
     background-color: orange;
     width: 550px;
     height: 779px;
-
 }
 
-.populated-state-search-page{
-
-    background-color: azure;
-    width: 550px;
-    height: 779px;
-
-    
-}
-
-
-.populated-watchlist{
-    background-color: azure;
+.populated-state-search-page, .populated-watchlist{
+    background-color: blue;
     width: 550px;
     height: 779px;
 }
+
+

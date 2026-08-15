@@ -9,7 +9,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - hero section
 - how-does-it-work section
 - FAQ section
-- 
+- footer section
+
+## [0.15.0+css] - 2026-08-15
+CSS rules refactoring for `empty-watchlist` and `initial-state` elements.
 
 ## [0.14.0+css] - 2026-08-14
 CSS centering the HTML structure.
