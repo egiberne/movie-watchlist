@@ -10,6 +10,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - how-does-it-work section
 - FAQ section
 - footer section
+- API
+
+## [0.16.0+html]
+### Changed 
+- JS link for the cookbook section in the README.md
+- Position of the `script` element
+
+### Added
+Link for the API in the README.md
 
 ## [0.15.0+html] - 2026-08-15
 ## Changed
