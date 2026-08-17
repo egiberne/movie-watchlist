@@ -11,7 +11,7 @@ Yet another movie watchlist website based on Scrimba Solo Project.
 
 
 ## API
-[OMDb]https://www.omdbapi.com/
+[OMDb](https://www.omdbapi.com/)
 
 ## Cookbook
 

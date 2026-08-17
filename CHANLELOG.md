@@ -10,7 +10,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - how-does-it-work section
 - FAQ section
 - footer section
-- API
+- Button to "add to watchlist" which saves that data to local storage
+- Watchlist page loads and display from local storage
+
+
+## [0.17.0+js]
+### Added
+JS API call to OMDB for title search
 
 ## [0.16.0+html]
 ### Changed 
