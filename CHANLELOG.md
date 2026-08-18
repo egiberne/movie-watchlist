@@ -13,12 +13,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+## [0.18.1+js]
+### Fixed
+- JS binding between `search-field` value and OMDB API request
 
 ## [0.18.0+js]
 ### Added
-JS reference for `search-button` element
-JS reference for `search-field` element
-JS event listener for `search-button` element
+- JS reference for `search-button` element
+- JS reference for `search-field` element
+- JS event listener for `search-button` element
 ### Removed
 Trailing period for the noun-phrase entries
 
