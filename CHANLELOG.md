@@ -14,10 +14,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Watchlist page loads and display from local storage
 
 
+## [0.18.0+js]
+### Added
+JS reference for `search-button` element
+JS reference for `search-field` element
+JS event listener for `search-button` element
+### Removed
+Trailing period for the noun-phrase entries
 
 ## [0.18.0+html]
 ### Added
-HTML id and class attribut for `search-button` element
+- HTML id and class attributes for `search-button` element
+- HTML id and class attributes for `search-field` element
 
 ## [0.17.0+js]
 ### Added
@@ -33,45 +41,45 @@ Link for the API in the README.md
 
 ## [0.15.0+html] - 2026-08-15
 ## Changed
-Comment for the footer section.
+Comment for the footer section
 
 ## [0.15.0+js] - 2026-08-15
 ### Added
-Watchlist.js file for watchlist.html.
-JS references for `populatedWatchlist`
+- Watchlist.js file for watchlist.html
+- JS references for `populatedWatchlist`
 ### Removed 
-JS references unused in index.js.
+JS references unused in index.js
 
 ## [0.15.0+css] - 2026-08-15
 ### Changed
-CSS rules for `empty-watchlist` and `initial-state` elements.
+CSS rules for `empty-watchlist` and `initial-state` elements
 
 ## [0.14.0+css] - 2026-08-14
 ### Added
-CSS centering the HTML structure.
+CSS centering the HTML structure
 
 ## [0.13.0] - 2026-08-13
 ### Changed
-Every entry in the changelog to include a period at the end.
+Every entry in the changelog to include a period at the end
 
 ## [0.13.0+css] - 2026-08-13
 ### Changed
-CSS positioning for `search-bar` element.
+CSS positioning for `search-bar` element
 
 ## [0.13.0+html] - 2026-08-13
 ### Changed
-HTML position for `search-bar` element.
+HTML position for `search-bar` element
 
 ## [0.12.0+js] - 2026-08-12
-JS reference for `populated-watchlist` component. 
+JS reference for `populated-watchlist` component
 
 ## [0.12.0+css] -2026-08-12
-CSS styling for `populated-watchlist` component.
+CSS styling for `populated-watchlist` component
 
 ## [0.12.0+html] - 2026-08-12 
 ### Added
 HTML structure for `populated-watchlist` component.
-HTML structure for loading the JS script in watchlist.html .
+HTML structure for loading the JS script in watchlist.html
 
 ## [0.11.0] - 2026-08-11
 ### Added
@@ -80,23 +88,23 @@ CSS styling for link element.
 
 ## [0.10.0+js] - 2026-08-10
 ### Added 
-JavaScript font-family reference from element.
+JavaScript font-family reference from element
 
 ## [0.10.0+css] - 2026-08-10
 ### Added 
-CSS font-family definition for Google font Inter.
+CSS font-family definition for Google font Inter
 
 ## [0.10.0+html] - 2026-08-10
 ### Added 
-HTML reference for external Google Font Inter.
+HTML reference for external Google Font Inter
 
 ## [0.9.0] - 2026-08-09
 ### Added 
-- HTML structure for `populated-state-search-page` component.
-- CSS styling for `populated-state-search-page` component.
-- JS reference for `populated-state-search-page` component.
-- Link for change log reference.
-- Link for versioning reference.
+- HTML structure for `populated-state-search-page` component
+- CSS styling for `populated-state-search-page` component
+- JS reference for `populated-state-search-page` component
+- Link for change log reference
+- Link for versioning reference
 
 ### Changed
 - Links related to MDN for HTML, CSS and JS cookbook or howto or guide.
