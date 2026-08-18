@@ -14,6 +14,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Watchlist page loads and display from local storage
 
 
+
+## [0.18.0+html]
+### Added
+HTML id and class attribut for `search-button` element
+
 ## [0.17.0+js]
 ### Added
 JS API call to OMDB for title search
