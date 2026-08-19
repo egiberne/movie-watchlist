@@ -17,8 +17,7 @@ console.log(`
     `)
 
 
-noDataState.style.display = "none"
-populatedStateSearchPage.style.display = "none"
+
 
 searchButton.addEventListener('click',()=>{
 

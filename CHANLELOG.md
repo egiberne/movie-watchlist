@@ -13,10 +13,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+## [0.19.0+html.js]
+### Added
+HTML class `.hidden` for hiding `noDataState` and `populatedStateSearchPage` elements
+### Removed
+JS statements for hiding the noDataState and populatedStateSearchPage elements
+JS statements to hide the `noDataState` and `populatedStateSearchPage` elements
 
 ## [0.19.0+css]
 ### Added
-CSS selectors to hide `noDataState` and `populatedStateSearchPage` elements
+CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
 
 ## [0.18.1+js]
 ### Fixed
