@@ -13,6 +13,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+
+## [0.19.0+css]
+### Added
+CSS selectors to hide `noDataState` and `populatedStateSearchPage` elements
+
 ## [0.18.1+js]
 ### Fixed
 - JS binding between `search-field` value and OMDB API request
