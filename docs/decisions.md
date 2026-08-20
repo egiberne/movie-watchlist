@@ -42,5 +42,34 @@ Time consuming
 Time consuming 
 
 
-## UI Management
+## Visibility Management
+Changed Display Logic from JavaScript to CSS
 
+### Reasons
+
+ UI visibility should be handled by CSS, not JavaScript. JS should only toggle classes, not define presentation rules.
+
+
+### Tradeoffs
+Requires a new class
+ 
+### Implementation
+Added a .hidden CSS class with display: none and updated JavaScript to toggle this class instead of modifying style.display.
+
+## Button Management
+
+Implemented input button instead of image
+
+### Reasons
+- Consistent with the rest of the UI
+- Full control over styling
+- More reliable display across browser
+
+### Tradeoffs
+Different from the initial visual design.
+
+### Implementation
+Replaced the image-based control with an HTML input button:
+```html
+<input type="button" value="⭱" id="sort-up" class="sort-up">
+```

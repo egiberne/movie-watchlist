@@ -84,6 +84,35 @@ footer{
     
 }
 
+.search-bar-sort{
+    display: flex;
+   background-color: #D1D5DB;
+    width: 120px;
+    height: 36px;
+}
+
+.search-bar-left{
+    display: flex;
+}
+
+.search-field{
+    width: 342px;
+    height: 36px;
+    border: none;
+
+}
+
+.search-button{
+    font-size: 14px;
+}
+
+.sort-up, .sort-down, .search-button{
+    background-color: #D1D5DB;
+    border: none;
+    cursor: pointer;
+    color: #374151;
+}
+
 .plus-icon{
     display:flex;
     flex-direction: row;

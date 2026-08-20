@@ -14,11 +14,15 @@
             </nav>
         </header>
         <div id="search-bar" class="search-bar">
-                    <input id="search-field" class="search-field" type="search" placeholder="Blade Runner" value="">
+                    <div id="search-bar-left" class="search-bar-left">
+                        <input type="image" name="image" src="asset/img/magnifer.png" alt="magnifer">
+                        <input type="search" name="search" id="search-field" class="search-field"  placeholder="Search for a movie" value="">
+                    </div>
 
                     <div id="search-bar-sort" class="search-bar-sort">
-                        <input type="checkbox" id="sort-box">
+                        <input type="button" value="⭱" id="sort-up" class="sort-up" >
                         <button id="search-button" class="search-button">Search</button>
+                        <input type="button" value="⭳" id="sort-down" class="sort-down">
                     </div>
         </div>
         <main>
