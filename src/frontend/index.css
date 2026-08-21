@@ -68,8 +68,13 @@ footer{
     height: 15px;
 }
 
+/*utility classes*/
 
-/* classes */
+.hidden{
+    display:none;
+}
+
+/* index.html  classes*/
 
 .search-bar{
     width: 460px;
@@ -141,8 +146,10 @@ footer{
     height: 779px;
 }
 
-.hidden{
-    display:none;
-}
+
+
+/*watchlist.html  classes */
+ .populatedWatchlist {
+ }
 
 

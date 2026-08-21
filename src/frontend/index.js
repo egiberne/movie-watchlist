@@ -1,10 +1,15 @@
 let currentYear = new Date().getFullYear()
 
+// index
 const initialState = document.querySelector('.initial-state')
 const noDataState = document.getElementById('no-data-state')
 const populatedStateSearchPage = document.getElementById('populated-state-search-page')
 const searchButton = document.getElementById('search-button')
 const searchField = document.getElementById('search-field')
+
+// watchlist
+const emptyWatchlist = document.querySelector('.empty-watchlist')
+const populatedWatchlist = document.getElementById('populated-watchlist')
 
 let movieTitle = ""
 
