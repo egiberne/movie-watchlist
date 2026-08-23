@@ -33,7 +33,31 @@ searchButton.addEventListener('click',()=>{
 
     fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}`)
     .then(response=>response.json())
-    .then(data=> console.log(data))
+    .then(data=> {
+        console.log(`before : ${initialState.outerHTML}
+            ${populatedStateSearchPage.outerHTML}`)
+
+            if(data){
+                initialState.classList.toggle("hidden")
+
+                console.log(initialState.outerHTML)
+                
+                populatedStateSearchPage.classList.remove("hidden")
+
+                populatedStateSearchPage.textContent=JSON.stringify(data)
+
+                console.log(populatedStateSearchPage.outerHTML)
+
+                console.log(data)
+             
+            } else{
+
+                noDataState.classList.remove("hidden")
+                
+
+
+            }
+    })
 
 })
 

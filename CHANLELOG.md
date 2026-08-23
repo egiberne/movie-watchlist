@@ -13,6 +13,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+
+
+## [0.22.0]
+### Added
+JS Logic to display  `populated-state-search-page` and `no-data-state` element
+JS Logic to hid list in `populated-state-search-page` element
+
 ## [0.21.0]
 ### Removed
 - `Watchlist.js` script file
