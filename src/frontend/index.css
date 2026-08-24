@@ -9,6 +9,7 @@ body{
     background-color: #000;
     font-family: Inter, sans-serif;
     width:550px;
+    height: 779px;
     position: relative;
     
 }
@@ -73,11 +74,7 @@ footer{
     height: 15px;
 }
 
-/*utility classes*/
 
-.hidden{
-    display:none;
-}
 
 /* index.html  classes*/
 
@@ -140,12 +137,16 @@ footer{
 }
 
 .no-data-state{
+    display: flex;
+    justify-content: center;
+    align-items:center;
     background-color: orange;
     width: 550px;
     height: 779px;
 }
 
 .populated-state-search-page, .populated-watchlist{
+    /* display: none; */
     background-color: blue;
     width: 550px;
     height: 779px;
@@ -153,8 +154,9 @@ footer{
 
 
 
-/*watchlist.html  classes */
- .populatedWatchlist {
- }
+/*utility classes*/
 
+.hidden{
+    display:none;
+}
 

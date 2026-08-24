@@ -14,13 +14,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Watchlist page loads and display from local storage
 
 
+## [0.23.0] - 2026-08-24
+### Fixed
+JS logic for the element display.
 
-## [0.22.0]
+## [0.22.0] - 2026-08-23
 ### Added
-JS Logic to display  `populated-state-search-page` and `no-data-state` element
-JS Logic to hid list in `populated-state-search-page` element
+JS Logic for  `populated-state-search-page` and `no-data-state` elements display
+JS Logic for list visibility in `populated-state-search-page` element 
 
-## [0.21.0]
+## [0.21.0] - 2026-08-21
 ### Removed
 - `Watchlist.js` script file
 
@@ -28,7 +31,7 @@ JS Logic to hid list in `populated-state-search-page` element
 - CSS selector organization by HTML files
 
 
-## [0.20.0+html.css]
+## [0.20.0+html.css] - 2026-08-20
 ### Added
 - HTML input elements for the magnifier, sorting-down, and sorting-up controls
 - CSS rules for the new input elements
@@ -38,22 +41,22 @@ CSS styling adjustments for `search-field` and `search-bar` elements
 
 
 
-## [0.19.0+html.js]
+## [0.19.0+html.js] - 2026-08-19
 ### Added
 HTML class `.hidden` for hiding `noDataState` and `populatedStateSearchPage` elements
 ### Removed
 JS statements for hiding the noDataState and populatedStateSearchPage elements
 JS statements to hide the `noDataState` and `populatedStateSearchPage` elements
 
-## [0.19.0+css]
+## [0.19.0+css] - 2026-08-19
 ### Added
 CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
 
-## [0.18.1+js]
+## [0.18.1+js] - 2026-08-18
 ### Fixed
 - JS binding between `search-field` value and OMDB API request
 
-## [0.18.0+js]
+## [0.18.0+js] - 2026-08-18
 ### Added
 - JS reference for `search-button` element
 - JS reference for `search-field` element
@@ -61,16 +64,16 @@ CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
 ### Removed
 Trailing period for the noun-phrase entries
 
-## [0.18.0+html]
+## [0.18.0+html] - 2026-08-18
 ### Added
 - HTML id and class attributes for `search-button` element
 - HTML id and class attributes for `search-field` element
 
-## [0.17.0+js]
+## [0.17.0+js] - 2026-08-17
 ### Added
 JS API call to OMDB for title search
 
-## [0.16.0+html]
+## [0.16.0+html] - 2026-08-16
 ### Changed 
 - JS link for the cookbook section in the README.md
 - Position of the `script` element

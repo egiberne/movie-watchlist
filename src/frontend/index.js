@@ -14,11 +14,11 @@ const populatedWatchlist = document.getElementById('populated-watchlist')
 let movieTitle = ""
 
 console.log(`
-    Verify elements :
-    initial-state, ${initialState}
-    no-data-state,  ${noDataState}
-    populated-state-search-page, ${populatedStateSearchPage}
-    movie title = ${movieTitle}
+    Verify elements before:
+    initial-state, ${initialState.outerHTML}
+    no-data-state,  ${noDataState.outerHTML}
+    populated-state-search-page, ${populatedStateSearchPage.outerHTML}
+    movie title = ${movieTitle.outerHTML}
     `)
 
 
@@ -34,25 +34,26 @@ searchButton.addEventListener('click',()=>{
     fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}`)
     .then(response=>response.json())
     .then(data=> {
-        console.log(`before : ${initialState.outerHTML}
-            ${populatedStateSearchPage.outerHTML}`)
 
-            if(data){
-                initialState.classList.toggle("hidden")
+            if(searchField.value){
+                initialState.classList.replace("initial-state","hidden")
+                noDataState.classList.add("hidden")
 
-                console.log(initialState.outerHTML)
-                
                 populatedStateSearchPage.classList.remove("hidden")
-
                 populatedStateSearchPage.textContent=JSON.stringify(data)
 
                 console.log(populatedStateSearchPage.outerHTML)
-
-                console.log(data)
+        
              
             } else{
-
                 noDataState.classList.remove("hidden")
+                initialState.classList.replace("initial-state","hidden")
+                populatedStateSearchPage.classList.add("hidden")
+
+                
+                console.log(populatedStateSearchPage.outerHTML)
+
+                console.log(noDataState.outerHTML)
                 
 
 
