@@ -13,6 +13,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+## [0.25.0+jss] - 2026-08-26
+### Added
+JS mapping of film titles from search result
+
 ## [0.24.0] - 2026-08-26
 ### Fixed
 HTML implementation of Google icons
