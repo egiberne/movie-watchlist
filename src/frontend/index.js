@@ -42,11 +42,13 @@ searchButton.addEventListener('click',()=>{
 
                 //display element
                 populatedStateSearchPage.classList.remove("hidden")
-                populatedStateSearchPage.textContent=JSON.stringify(data)
+                // populatedStateSearchPage.textContent=JSON.stringify(data)
                 // populatedStateSearchPage.textContent = data.search
-                console.log(populatedStateSearchPage.outerHTML)
+                // console.log(populatedStateSearchPage.outerHTML)
 
-                console.log(data.Search.map((film)=>film.Title).join(''))
+                console.log(data.Search.map((film)=>`<p>${film.Title}</p>`).join(''))
+
+                populatedStateSearchPage.innerHTML=data.Search.map((film)=>`<p>${film.Title}</p>`).join('')
         
              
             } else{
