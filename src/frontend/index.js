@@ -6,6 +6,8 @@ const noDataState = document.getElementById('no-data-state')
 const populatedStateSearchPage = document.getElementById('populated-state-search-page')
 const searchButton = document.getElementById('search-button')
 const searchField = document.getElementById('search-field')
+let html =``
+let array=``
 
 // watchlist
 const emptyWatchlist = document.querySelector('.empty-watchlist')
@@ -42,14 +44,23 @@ searchButton.addEventListener('click',()=>{
 
                 //display element
                 populatedStateSearchPage.classList.remove("hidden")
-                // populatedStateSearchPage.textContent=JSON.stringify(data)
+                //populatedStateSearchPage.textContent=JSON.stringify(data)
                 // populatedStateSearchPage.textContent = data.search
                 // console.log(populatedStateSearchPage.outerHTML)
 
-                console.log(data.Search.map((film)=>`<p>${film.Title}</p>`).join(''))
+                console.log(JSON.stringify(data))
 
-                populatedStateSearchPage.innerHTML=data.Search.map((film)=>`<p>${film.Title}</p>`).join('')
-        
+
+                array = data.Search.map((film)=>{
+                   html=  `
+                    <img src=${film.Poster}>
+                    <p>${film.Title}</p>
+                    <p>${film.Year}</p>
+                   `
+                   return html
+                })
+
+                populatedStateSearchPage.innerHTML= array.join('')
              
             } else{
                 noDataState.classList.remove("hidden")

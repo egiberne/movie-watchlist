@@ -13,8 +13,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+## [0.27.0+js] - 2026-08-28
+# Added 
+JS template‑literal HTML structure for film posters, titles, and years
 
 ## [0.26.0+js] - 2026-08-27
+## Added
 JS template‑literal HTML structure for film titles
 
 ## [0.25.0+js] - 2026-08-26
