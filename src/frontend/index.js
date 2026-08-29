@@ -53,9 +53,12 @@ searchButton.addEventListener('click',()=>{
 
                 array = data.Search.map((film)=>{
                    html=  `
+                    <div id="data" class="data">
                     <img src=${film.Poster}>
                     <p>${film.Title}</p>
                     <p>${film.Year}</p>
+                    <button>add</button>
+                    </div>
                    `
                    return html
                 })
