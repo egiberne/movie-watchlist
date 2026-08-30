@@ -9,7 +9,6 @@ body{
     background-color: #000;
     font-family: Inter, sans-serif;
     width:550px;
-    height: 779px;
     position: relative;
     
 }
@@ -160,7 +159,7 @@ select {
 .populated-state-search-page, .populated-watchlist{
     background-color: blue;
     width: 550px;
-    height: 779px;
+    
 }
 
 

@@ -5,13 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- dark theme
-- hero section
-- how-does-it-work section
-- FAQ section
-- footer section
-- Button to "add to watchlist" which saves that data to local storage
-- Watchlist page loads and display from local storage
+- Add button with image
+- Right side margin spacing
+
+## [0.30.0]
+### Added 
+- Dash prefix for every single statement
+## Removed
+- Trailing period for noun-phrase statements
+### Changed
+CSS height of the `populated-state-search-page` element
 
 ## [0.29.0+css]
 ### Changed
@@ -20,7 +23,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - CSS rounded‑style on the right side of the search bar
 
 ### Added
-- CSS rules for sorting `select` element
+CSS rules for sorting `select` element
 
 ### Removed
 - `sort-down` input button
@@ -28,32 +31,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [0.28.0+js] - 2026-08-2
 ### Added 
-HTML structure for the search result element 
+- HTML structure for the search result element 
 
 ## [0.26.0+js] - 2026-08-27
 ### Added
-JS template‑literal HTML structure for film titles
+- JS template‑literal HTML structure for film titles
 
 ## [0.25.0+js] - 2026-08-26
 ### Added
-JS mapping of film titles from search result
+- JS mapping of film titles from search result
 
 ## [0.24.0] - 2026-08-26
 ### Fixed
-HTML implementation of Google icons
+- HTML implementation of Google icons
 
 ## [0.23.0] - 2026-08-24
 ### Fixed
-JS logic for the element display.
+- JS logic for the element display.
 
 ## [0.22.0] - 2026-08-23
 ### Added
-JS Logic for  `populated-state-search-page` and `no-data-state` elements display
-JS Logic for list visibility in `populated-state-search-page` element 
+- JS Logic for  `populated-state-search-page` and `no-data-state` elements display
+- JS Logic for list visibility in `populated-state-search-page` element 
 
 ## [0.21.0] - 2026-08-21
 ### Removed
-- `Watchlist.js` script file
+`Watchlist.js` script file
 
 ### Changed
 - CSS selector organization by HTML files
@@ -65,20 +68,20 @@ JS Logic for list visibility in `populated-state-search-page` element
 - CSS rules for the new input elements
 
 ### Changed
-CSS styling adjustments for `search-field` and `search-bar` elements
+- CSS styling adjustments for `search-field` and `search-bar` elements
 
 
 
 ## [0.19.0+html.js] - 2026-08-19
 ### Added
-HTML class `.hidden` for hiding `noDataState` and `populatedStateSearchPage` elements
+- HTML class `.hidden` for hiding `noDataState` and `populatedStateSearchPage` elements
 ### Removed
-JS statements for hiding the noDataState and populatedStateSearchPage elements
+- JS statements for hiding the noDataState and populatedStateSearchPage elements
 JS statements to hide the `noDataState` and `populatedStateSearchPage` elements
 
 ## [0.19.0+css] - 2026-08-19
 ### Added
-CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
+- CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
 
 ## [0.18.1+js] - 2026-08-18
 ### Fixed
@@ -90,7 +93,7 @@ CSS selectors for hiding `noDataState` and `populatedStateSearchPage` elements
 - JS reference for `search-field` element
 - JS event listener for `search-button` element
 ### Removed
-Trailing period for the noun-phrase entries
+- Trailing period for the noun-phrase entries
 
 ## [0.18.0+html] - 2026-08-18
 ### Added
@@ -99,7 +102,7 @@ Trailing period for the noun-phrase entries
 
 ## [0.17.0+js] - 2026-08-17
 ### Added
-JS API call to OMDB for title search
+- JS API call to OMDB for title search
 
 ## [0.16.0+html] - 2026-08-16
 ### Changed 
@@ -107,66 +110,66 @@ JS API call to OMDB for title search
 - Position of the `script` element
 
 ### Added
-Link for the API in the README.md
+- Link for the API in the README.md
 
 ## [0.15.0+html] - 2026-08-15
 ## Changed
-Comment for the footer section
+- Comment for the footer section
 
 ## [0.15.0+js] - 2026-08-15
 ### Added
 - Watchlist.js file for watchlist.html
 - JS references for `populatedWatchlist`
 ### Removed 
-JS references unused in index.js
+- JS references unused in index.js
 
 ## [0.15.0+css] - 2026-08-15
 ### Changed
-CSS rules for `empty-watchlist` and `initial-state` elements
+- CSS rules for `empty-watchlist` and `initial-state` elements
 
 ## [0.14.0+css] - 2026-08-14
 ### Added
-CSS centering the HTML structure
+- CSS centering the HTML structure
 
 ## [0.13.0] - 2026-08-13
 ### Changed
-Every entry in the changelog to include a period at the end
+- Every entry in the changelog to include a period at the end
 
 ## [0.13.0+css] - 2026-08-13
 ### Changed
-CSS positioning for `search-bar` element
+- CSS positioning for `search-bar` element
 
 ## [0.13.0+html] - 2026-08-13
 ### Changed
-HTML position for `search-bar` element
+- HTML position for `search-bar` element
 
 ## [0.12.0+js] - 2026-08-12
-JS reference for `populated-watchlist` component
+- JS reference for `populated-watchlist` component
 
 ## [0.12.0+css] -2026-08-12
-CSS styling for `populated-watchlist` component
+- CSS styling for `populated-watchlist` component
 
 ## [0.12.0+html] - 2026-08-12 
 ### Added
-HTML structure for `populated-watchlist` component.
-HTML structure for loading the JS script in watchlist.html
+- HTML structure for `populated-watchlist` component.
+- HTML structure for loading the JS script in watchlist.html
 
 ## [0.11.0] - 2026-08-11
 ### Added
-CSS styling for header element.
-CSS styling for link element. 
+- CSS styling for header element.
+- CSS styling for link element. 
 
 ## [0.10.0+js] - 2026-08-10
 ### Added 
-JavaScript font-family reference from element
+- JavaScript font-family reference from element
 
 ## [0.10.0+css] - 2026-08-10
 ### Added 
-CSS font-family definition for Google font Inter
+- CSS font-family definition for Google font Inter
 
 ## [0.10.0+html] - 2026-08-10
 ### Added 
-HTML reference for external Google Font Inter
+- HTML reference for external Google Font Inter
 
 ## [0.9.0] - 2026-08-09
 ### Added 
@@ -182,26 +185,26 @@ HTML reference for external Google Font Inter
 
 ## 0.8.2 2026-08-08
 ### Added
-Control in JS, the component *no-data-state*.
+- Control in JS, the component *no-data-state*.
 
 ## 0.8.1 2026-08-08
 ### Added 
-Design in CSS rule the component, *no-data-state*.
+- Design in CSS rule the component, *no-data-state*.
 
 ## 0.8.0 2026-08-08
 ### Added 
 - Structure in HTML, the component *no-data-state*.
 - Structure in HTML, a component for copyrighting in the element, *footer*. 
 ### Changed
-Update the watchlist *section* elements.
+- Update the watchlist *section* elements.
 
 ## 0.7.2 2026-08-07
 ### Added
-Implement JS statement to control the plus-icon.
+- Implement JS statement to control the plus-icon.
 
 ## 0.7.1 2026-08-07
 ### Added
-Implement the CSS styling for the plus-icon element.
+- Implement the CSS styling for the plus-icon element.
 
 ## 0.7.0 2026-08-07
 ### Added
@@ -212,17 +215,17 @@ Implement the initial state component for the watchlist.
 
 ## 0.6.2 2026-08-06
 ### Added
-Implement the control of the search bar element in JS.
+- Implement the control of the search bar element in JS.
 
 ## 0.6.1 2026-08-06
 ### Added
-Implement the design styling of the search bar in CSS.
+- Implement the design styling of the search bar in CSS.
 ### Changed
-Update the search bar structure in HTML.
+- Update the search bar structure in HTML.
 
 ## 0.6.0 2026-08-06
 ### Added
-Implement the search bar component in HTML.
+- Implement the search bar component in HTML.
 
 ## 0.5.0 2026-08-05
 ### Changed
