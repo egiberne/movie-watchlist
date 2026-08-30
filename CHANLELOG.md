@@ -13,12 +13,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Button to "add to watchlist" which saves that data to local storage
 - Watchlist page loads and display from local storage
 
+## [0.29.0+css]
+### Changed
+- HTML search‑criteria control as `select` element
+- HTML sort control as `input` element of type `image`
+- CSS rounded‑style on the right side of the search bar
+
+### Added
+- CSS rules for sorting `select` element
+
+### Removed
+- `sort-down` input button
+- `sort-up` input button
+
 ## [0.28.0+js] - 2026-08-2
-# Added 
+### Added 
 HTML structure for the search result element 
 
 ## [0.26.0+js] - 2026-08-27
-## Added
+### Added
 JS template‑literal HTML structure for film titles
 
 ## [0.25.0+js] - 2026-08-26
