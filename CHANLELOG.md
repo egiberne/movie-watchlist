@@ -8,7 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Add button with image
 - Right side margin spacing
 
-## [0.30.0]
+## [0.30.1] - 2026-08-29
+### Added 
+- Figma design in Readme.md
+- Requirements.md document
+
+## [0.30.0] - 2026-08-30
 ### Added 
 - Dash prefix for every single statement
 ## Removed
@@ -16,7 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 CSS height of the `populated-state-search-page` element
 
-## [0.29.0+css]
+## [0.29.0+css] - 2026-08-30
 ### Changed
 - HTML search‑criteria control as `select` element
 - HTML sort control as `input` element of type `image`
@@ -29,7 +34,7 @@ CSS rules for sorting `select` element
 - `sort-down` input button
 - `sort-up` input button
 
-## [0.28.0+js] - 2026-08-2
+## [0.28.0+js] - 2026-08-29
 ### Added 
 - HTML structure for the search result element 
 

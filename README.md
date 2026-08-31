@@ -8,6 +8,7 @@ Yet another movie watchlist website based on Scrimba Solo Project.
 
 ## Design
 [Figma](https://www.figma.com/design/jhFRdFIdHpRxsDznNXtpXw/Movie-Watchlist?node-id=2-17&t=0j0yurjuPUaqdVMu-0)
+![alt text](<docs/Figma_SP_ Watchlist Creator - Light.png>)
 
 
 ## API
