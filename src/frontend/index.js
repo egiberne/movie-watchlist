@@ -32,38 +32,56 @@ searchButton.addEventListener('click',()=>{
 
 
    
-
-    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}`)
+    // http://www.omdbapi.com/?t=batman&plot=full
+    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full`)
     .then(response=>response.json())
     .then(data=> {
 
             if(searchField.value){
-                //hid element
+                //hide element
                 initialState.classList.replace("initial-state","hidden")
                 noDataState.classList.add("hidden")
 
                 //display element
                 populatedStateSearchPage.classList.remove("hidden")
-                //populatedStateSearchPage.textContent=JSON.stringify(data)
-                // populatedStateSearchPage.textContent = data.search
-                // console.log(populatedStateSearchPage.outerHTML)
+               
 
                 console.log(JSON.stringify(data))
 
+                if(data){ // expose object data
+                    html=  `
+                        <div id="data" class="data">
+                            <img id="poster" class="poster" src=${data.Poster}>
+                            <p id="film" class="film">${data.Title}</p>
+                            <p id="year" class="year">${data.Year}</p>
+                            <p>${data.Genre} </p>
+                            <p>${data.Runtime}</p>
+                            <p>${data.Plot}</p>
+                            <button id="add-button" class="add-button">add</button>
+                        </div>
+                    `
+                    populatedStateSearchPage.innerHTML= html
+                }
 
-                array = data.Search.map((film)=>{
-                   html=  `
-                    <div id="data" class="data">
-                    <img src=${film.Poster}>
-                    <p>${film.Title}</p>
-                    <p>${film.Year}</p>
-                    <button>add</button>
-                    </div>
-                   `
-                   return html
-                })
+                if(data.Search){ // map a array
+                    array = data.Search.map((film)=>{
+                    html=  `
+                        <div id="data" class="data">
+                            <img id="poster" class="poster" src=${film.Poster}>
+                            <p id="film" class="film">${film.Title}</p>
+                            <p id="year" class="year">${film.Year}</p>
+                            <p>${film.Genre} </p>
+                            <p>${film.Runtime}</p>
+                            <p>${film.Plot}</p>
+                            <button id="add-button" class="add-button">add</button>
+                        </div>
+                    `
+                    return html
+                    })
+                    populatedStateSearchPage.innerHTML= array.join('')
+                }
 
-                populatedStateSearchPage.innerHTML= array.join('')
+                
              
             } else{
                 noDataState.classList.remove("hidden")

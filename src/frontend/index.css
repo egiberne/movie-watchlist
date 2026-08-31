@@ -85,6 +85,16 @@ select {
 }
 
 
+/* Poster */
+div img {
+/* position: absolute; */
+width: 99px;
+height: 147.41px;
+/* left: 44px; */
+/* top: 271px; */
+border-radius: 2.33px;
+}
+
 
 /* index.html  classes*/
 
