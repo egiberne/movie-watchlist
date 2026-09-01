@@ -33,7 +33,7 @@ searchButton.addEventListener('click',()=>{
 
    
     // http://www.omdbapi.com/?t=batman&plot=full
-    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full`)
+    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full&type=movie`)
     .then(response=>response.json())
     .then(data=> {
 
@@ -52,14 +52,19 @@ searchButton.addEventListener('click',()=>{
                     html=  `
                         <div id="data" class="data">
                             <img id="poster" class="poster" src=${data.Poster}>
-                            <p id="film" class="film">${data.Title}</p>
-                            <p id="year" class="year">${data.Year}</p>
-                            <p>${data.Genre} </p>
-                            <p>${data.Runtime}</p>
+                            <div>
+                                <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
+                            </div>
+                            <div>
+                                <p>${data.Runtime} ${data.Genre}    
+                                <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
+                                <label>Watchlist</label>
+                                </p>
+                            </div>
                             <p>${data.Plot}</p>
-                            <button id="add-button" class="add-button">add</button>
                         </div>
                     `
+                    
                     populatedStateSearchPage.innerHTML= html
                 }
 

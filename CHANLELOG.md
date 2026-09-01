@@ -7,6 +7,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [Unreleased]
 Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
+
+
+## [0.32.0+js] - 2026-09-01
+
+###
+- Icon for the add-button
+
+### Changed
+- Roadmap file with checkbox
+- API Query paramater for movie type
+
 ## [0.31.0] - 2026-08-31
 ### Added 
 - Roadmap file
@@ -14,7 +25,7 @@ Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 ## Changed
 - `select` element for title only search
-- Posteer size
+- Poster size
 
 ## Removed
 - Year option in `select` element
