@@ -1,103 +1,87 @@
 # Roadmap
-
-Daily plan
-
-# ⭐ **WEEK 1 — UI Foundation (CSS Slices)**  
-
-- [x] **Day 1 — Poster Sizing (Search Page)**  
-Match Figma exactly.
-
-- [ ] **Day 2 — Poster Sizing (Watchlist Page)**  
-Mirror the search page styling.
-
-- [x] **Day 3 — Add Button Styling (Search Page)**  
-Match Figma: padding, colors, icon, hover.
-
-- [ ] **Day 4 — Remove Button Styling (Watchlist Page)**  
-Match Figma: padding, colors, icon, hover.
-
-- [ ] **Day 5 — Movie Card Styling (Search Page)**  
-Spacing, typography, layout.
-
-- [ ] **Day 6 — Movie Card Styling (Watchlist Page)**  
-Mirror the search page card.
-
-- [ ] **Day 7 — UI Polish Pass**  
-Margins, spacing, alignment, typography.
-
+ 
 
 ---
 
-# ⭐ **WEEK 2 — Core Logic (JS Slices)**  
+## ⭐ WEEK 1 — Core Logic Foundation (Data + Storage Layer)
 
-- [ ] **Day 8 — Add-to-Watchlist Logic**  
-Save movie object to localStorage.
+**Goal:** Build the underlying data structures *before* any UI.
 
-- [ ] **Day 9 — Prevent Duplicates**  
-Disable button or change text if already saved.
+- **Day 1 — OMDB Fetch Review & Schema Normalization**  
+  Ensure consistent movie object structure.
 
-- [ ] **Day 10 — Remove-from-Watchlist Logic**  
-Delete movie from localStorage.
+- **Day 2 — Implement Add-to-Watchlist Logic**  
+  Save normalized movie objects to localStorage.
 
-- [ ] **Day 11 — Render Watchlist from localStorage**  
-Loop through saved movies and render cards.
+- **Day 3 — Prevent Duplicates**  
+  Check localStorage before adding; disable or modify button state.
 
-- [ ] **Day 12 — Sync Styling Across Pages**  
-Ensure search + watchlist cards match perfectly.
+- **Day 4 — Implement Remove-from-Watchlist Logic**  
+  Filter out movie by ID and update localStorage.
 
-- [ ] **Day 13 — Navigation Slice**  
-Link between pages, match Figma.
+- **Day 5 — Implement Watchlist Rendering Logic**  
+  Read localStorage → render cards → handle empty state.
 
-- [ ] **Day 14 — Logic Polish Pass**  
-Clean code, tidy functions, remove console.logs.
+- **Day 6 — Build Internal Storage API**  
+  Wrap add/remove/get operations into reusable functions.
 
-
----
-
-# ⭐ **WEEK 3 — Shipping Prep (Deployment Slices)**  
-
-- [ ] **Day 15 — Folder Structure Cleanup**  
-Ensure clean HTML/CSS/JS organization.
-
-- [ ] **Day 16 — Path Fixes**  
-Make sure links work on Netlify.
-
-- [ ] **Day 17 — Watchlist Page Routing Check**  
-Test localStorage across pages.
-
-- [ ] **Day 18 — Final UI Polish**  
-Spacing, shadows, colors, typography.
-
-- [ ] **Day 19 — Netlify Deployment**  
-Drag-and-drop → test → fix → finalize.
-
-- [ ] **Day 20 — README Creation**  
-Add screenshots, features, tech stack, link.
-
-- [ ] **Day 21 — Portfolio Update**  
-Add project to your portfolio.
-
+- **Day 7 — Logic Polish Pass**  
+  Clean functions, remove console.logs, finalize storage layer.
 
 ---
 
-# ⭐ **WEEK 4
-- [ ] **Day 22 — Share the Project**  
-LinkedIn, GitHub, portfolio.
+## ⭐ WEEK 2 — Search Page UI (CSS + HTML)
 
-- [ ] **Day 23 — Write a Short Dev Log**  
-Explain what you built.
+**Goal:** Style the search page using *real rendered movie data*.
 
-- [ ] **Day 24 — Add a “Future Features” Section**  
-Optional improvements.
+- **Day 8 — Poster Sizing (Search Page)**  
+- **Day 9 — Add Button Styling (Search Page)**  
+- **Day 10 — Search Card Layout (Real Data)**  
+- **Day 11 — Search Card Typography**  
+- **Day 12 — Search Page Spacing & Alignment**  
+- **Day 13 — Search Page Responsiveness**  
+- **Day 14 — Search Page UI Polish**
 
-- [ ] **Day 25 — Review Your Code**  
-Learn from your own build.
+---
 
-- [ ] **Day 26 — Celebrate the Ship**  
-Identity reward.
+## ⭐ WEEK 3 — Watchlist Page UI (CSS + HTML)
 
-- [ ] **Day 27 — Plan Your Next Directory**  
-Farm directory? Microgreens? Business listings?
+**Goal:** Style the watchlist page using *real saved movies* from localStorage.
 
-- [ ] **Day 28 — Reset Your Builder System**  
-Prepare for the next project.
+- **Day 15 — Poster Sizing (Watchlist Page)**  
+- **Day 16 — Remove Button Styling (Watchlist Page)**  
+- **Day 17 — Watchlist Card Layout (Real Data)**  
+- **Day 18 — Watchlist Card Typography**  
+- **Day 19 — Watchlist Page Spacing & Alignment**  
+- **Day 20 — Sync Styling Across Pages**  
+  Unify card component, spacing, typography.
+
+- **Day 21 — Navigation Slice**  
+  Search ↔ Watchlist links.
+
+---
+
+## ⭐ WEEK 4 — Deployment + Identity Reinforcement
+
+**Goal:** Ship the project and reinforce your builder identity.
+
+- **Day 22 — Folder Structure Cleanup**  
+- **Day 23 — Path Fixes**  
+- **Day 24 — Netlify Deployment**  
+- **Day 25 — README Creation**  
+- **Day 26 — Portfolio Update**  
+- **Day 27 — Share the Project**  
+- **Day 28 — Celebrate + Reset Builder System**
+
+---
+
+## ⭐ Why This Roadmap Is Correct
+
+- UI follows data  
+- Watchlist follows storage  
+- Search page first (primary flow)  
+- Watchlist page second (secondary flow)  
+- Deployment last  
+- Identity reinforcement after shipping  
+
+This is exactly how senior engineers structure multi‑page apps.
