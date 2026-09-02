@@ -8,6 +8,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 
+## [0.33.0+js] - 2026-09-02
+
+### Added
+Search flow for all movies sharing the same keyword title
+
+### Changed
+- Search flow structure
+
+### Removed
+- Single title search flow
+
 
 ## [0.32.0+js] - 2026-09-01
 
@@ -16,7 +27,7 @@ Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 ### Changed
 - Roadmap file with checkbox
-- API Query paramater for movie type
+- API Query parameter for movie type
 
 ## [0.31.0] - 2026-08-31
 ### Added 

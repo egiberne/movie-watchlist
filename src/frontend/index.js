@@ -7,7 +7,7 @@ const populatedStateSearchPage = document.getElementById('populated-state-search
 const searchButton = document.getElementById('search-button')
 const searchField = document.getElementById('search-field')
 let html =``
-let array=``
+let titles=``
 
 // watchlist
 const emptyWatchlist = document.querySelector('.empty-watchlist')
@@ -15,25 +15,13 @@ const populatedWatchlist = document.getElementById('populated-watchlist')
 
 let movieTitle = ""
 
-console.log(`
-    Verify elements before:
-    initial-state, ${initialState.outerHTML}
-    no-data-state,  ${noDataState.outerHTML}
-    populated-state-search-page, ${populatedStateSearchPage.outerHTML}
-    movie title = ${movieTitle.outerHTML}
-    `)
-
-
-
 
 searchButton.addEventListener('click',()=>{
 
-    console.log(`movie title : ${searchField.value}`)
+    console.info(`movie title : ${searchField.value}`)
 
-
-   
-    // http://www.omdbapi.com/?t=batman&plot=full
-    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full&type=movie`)
+    // fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full&type=movie`)
+    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}&plot=full&type=movie`)
     .then(response=>response.json())
     .then(data=> {
 
@@ -44,47 +32,58 @@ searchButton.addEventListener('click',()=>{
 
                 //display element
                 populatedStateSearchPage.classList.remove("hidden")
-               
 
-                console.log(JSON.stringify(data))
 
-                if(data){ // expose object data
-                    html=  `
-                        <div id="data" class="data">
-                            <img id="poster" class="poster" src=${data.Poster}>
-                            <div>
-                                <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
-                            </div>
-                            <div>
-                                <p>${data.Runtime} ${data.Genre}    
-                                <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
-                                <label>Watchlist</label>
-                                </p>
-                            </div>
-                            <p>${data.Plot}</p>
-                        </div>
-                    `
+                // if(data){ // expose object data
+                //     html=  `
+                //         <div id="data" class="data">
+                //             <img id="poster" class="poster" src=${data.Poster}>
+                //             <div>
+                //                 <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
+                //             </div>
+                //             <div>
+                //                 <p>${data.Runtime} ${data.Genre}    
+                //                 <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
+                //                 <label>Watchlist</label>
+                //                 </p>
+                //             </div>
+                //             <p>${data.Plot}</p>
+                //         </div>
+                //     `
                     
-                    populatedStateSearchPage.innerHTML= html
-                }
+                //     populatedStateSearchPage.innerHTML= html
+                // }
 
-                if(data.Search){ // map a array
-                    array = data.Search.map((film)=>{
-                    html=  `
-                        <div id="data" class="data">
-                            <img id="poster" class="poster" src=${film.Poster}>
-                            <p id="film" class="film">${film.Title}</p>
-                            <p id="year" class="year">${film.Year}</p>
-                            <p>${film.Genre} </p>
-                            <p>${film.Runtime}</p>
-                            <p>${film.Plot}</p>
-                            <button id="add-button" class="add-button">add</button>
-                        </div>
-                    `
-                    return html
-                    })
-                    populatedStateSearchPage.innerHTML= array.join('')
-                }
+              
+                    titles = data.Search.map((film)=>film.Title)
+
+                    for(title of titles){
+                        
+                    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${title}&plot=full&type=movie`)
+                            .then(r=>r.json())
+                            .then(data=>{
+                                console.log(title)
+                                html +=  `
+                                <div id="data" class="data">
+                                    <img id="poster" class="poster" src=${data.Poster}>
+                                    <div>
+                                        <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
+                                    </div>
+                                    <div>
+                                        <p>${data.Runtime} ${data.Genre}    
+                                        <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
+                                        <label>Watchlist</label>
+                                        </p>
+                                    </div>
+                                    <p>${data.Plot}</p>
+                                </div>
+                            `
+                            })
+                        }
+                        
+
+                    populatedStateSearchPage.innerHTML= html
+                
 
                 
              

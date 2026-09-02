@@ -10,7 +10,7 @@ Match Figma exactly.
 - [ ] **Day 2 — Poster Sizing (Watchlist Page)**  
 Mirror the search page styling.
 
-- [ ] **Day 3 — Add Button Styling (Search Page)**  
+- [x] **Day 3 — Add Button Styling (Search Page)**  
 Match Figma: padding, colors, icon, hover.
 
 - [ ] **Day 4 — Remove Button Styling (Watchlist Page)**  
