@@ -59,27 +59,38 @@ searchButton.addEventListener('click',()=>{
 
                     for(title of titles){
                         
-                    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${title}&plot=full&type=movie`)
-                            .then(r=>r.json())
-                            .then(data=>{
-                                console.log(title)
-                                html +=  `
-                                <div id="data" class="data">
-                                    <img id="poster" class="poster" src=${data.Poster}>
-                                    <div>
-                                        <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
+                        fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${title}&plot=full&type=movie`)
+                                .then(r=>r.json())
+                                .then(data=>{
+
+                                    localStorage.setItem("title",data.Title)
+                                    // localStorage.setItem("poster",data.Poster)
+                                    // localStorage.setItem("rate",data.imdbRating)
+                                    // localStorage.setItem("genre",data.Genre)
+                                    // localStorage.setItem("time",data.Runtime)
+                                    // localStorage.setItem("plot",data.data.Plot)
+
+                                    console.log(localStorage.getItem("title"))
+
+                                                               
+
+                                    html +=  `
+                                    <div id="data" class="data">
+                                        <img id="poster" class="poster" src=${data.Poster}>
+                                        <div>
+                                            <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
+                                        </div>
+                                        <div>
+                                            <p>${data.Runtime} ${data.Genre}    
+                                            <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
+                                            <label>Watchlist</label>
+                                            </p>
+                                        </div>
+                                        <p>${data.Plot}</p>
                                     </div>
-                                    <div>
-                                        <p>${data.Runtime} ${data.Genre}    
-                                        <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
-                                        <label>Watchlist</label>
-                                        </p>
-                                    </div>
-                                    <p>${data.Plot}</p>
-                                </div>
-                            `
-                            })
-                        }
+                                `
+                                })
+                    }
                         
 
                     populatedStateSearchPage.innerHTML= html
