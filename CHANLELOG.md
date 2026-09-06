@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [Unreleased]
 Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
+## [0.36.0+txt] - 2026-09-06
+### Changed
+README about HTTP server decision
 
 ## [0.35.0+js] - 2026-09-06
 ### Fixed

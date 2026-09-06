@@ -75,17 +75,16 @@ Replaced the image-based control with an HTML input button:
 ```
 
 ### HTTP Server
-Leverage Node module http-server
+Leverage VSCode Live Preview
 ### Reasons
-- VSCode Live Server Preview limitations
-- http-server serve in the browser
+- VSCode Live Preview easy to install 
+- VSCOde LIve Preview easy to use
 
 ### Tradeoffs
-Learning curve
+- Lack of control
+- Hide the Query string  
  
 ### Implementation
-```powershell
-npx http-server
-```
+Install Live Preview VSCode Extension
 
  
