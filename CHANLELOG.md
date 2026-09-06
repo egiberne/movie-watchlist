@@ -8,9 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 
+## [0.35.0+js] - 2026-09-06
+### Fixed
+LocalStorage storage‑layer implementation
+### Changed
+HTML  structure of the listing card
 
 ## [0.34.0+js] - 2026-09-06
-### Added
+### Fixed
 Refactor of result‑collection flow
 
 ### Removed

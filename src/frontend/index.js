@@ -42,22 +42,19 @@ searchButton.addEventListener('click', async ()=>{
     const movies = await Promise.all(responses.map(response => response.json()))
 
 
-    let html = movies.map(movie => ` 
-                    <div id="movie" class="movie">
+    let html = movies.map(movie => { console.log(movie) 
+        return ` 
+                    <div class="movie-card">
                             <img id="poster" class="poster" src=${movie.Poster}>
-                            <div>
-                                <p id="film" class="film">${movie.Title} ⭐ ${movie.imdbRating} </p>
-                            </div>
-                            <div>
-                                <p>${movie.Runtime} ${data.Genre}    
-                                <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
-                                <label>Watchlist</label>
-                                </p>
-                            </div>
-                            <p>${movie.Plot}</p>
+                            ${movie.Title} ⭐ ${movie.imdbRating}                            
+                            ${movie.Runtime} ${data.Genre}
+                            ${movie.Plot}  
+                            <input type="image" id="${movie.imdbID}" class="add-button" src="asset/img/add-button.png">
+                            <label>Watchlist</label>
+                           
                     </div>
                 `
-).join('')
+   }).join('')
     
 
 
@@ -85,8 +82,8 @@ searchButton.addEventListener('click', async ()=>{
 })
 
 
-  populatedStateSearchPage.addEventListener('click', (e)=>
+  populatedStateSearchPage.addEventListener('click', (e)=> {
+    localStorage.setItem(`card-${e.target.id}`,document.getElementById(e.target.id).parentElement.outerHTML)
 
-    console.log(e.target)
 
-)
+})
