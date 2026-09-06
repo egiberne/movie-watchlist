@@ -6,6 +6,7 @@ const noDataState = document.getElementById('no-data-state')
 const populatedStateSearchPage = document.getElementById('populated-state-search-page')
 const searchButton = document.getElementById('search-button')
 const searchField = document.getElementById('search-field')
+const card= document.getElementById('card')
 let html =``
 let titles=``
 
@@ -64,18 +65,13 @@ searchButton.addEventListener('click',()=>{
                                 .then(data=>{
 
                                     localStorage.setItem("title",data.Title)
-                                    // localStorage.setItem("poster",data.Poster)
-                                    // localStorage.setItem("rate",data.imdbRating)
-                                    // localStorage.setItem("genre",data.Genre)
-                                    // localStorage.setItem("time",data.Runtime)
-                                    // localStorage.setItem("plot",data.data.Plot)
 
                                     console.log(localStorage.getItem("title"))
 
                                                                
 
                                     html +=  `
-                                    <div id="data" class="data">
+                                    <div id="card" class="card">
                                         <img id="poster" class="poster" src=${data.Poster}>
                                         <div>
                                             <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
@@ -115,4 +111,10 @@ searchButton.addEventListener('click',()=>{
 
 })
 
+
+
+populatedStateSearchPage.addEventListener('click',function(e){
+
+    console.log(e)
+})
 
