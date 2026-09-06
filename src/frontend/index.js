@@ -7,8 +7,7 @@ const populatedStateSearchPage = document.getElementById('populated-state-search
 const searchButton = document.getElementById('search-button')
 const searchField = document.getElementById('search-field')
 const card= document.getElementById('card')
-let html =``
-let titles=``
+
 
 // watchlist
 const emptyWatchlist = document.querySelector('.empty-watchlist')
@@ -17,104 +16,77 @@ const populatedWatchlist = document.getElementById('populated-watchlist')
 let movieTitle = ""
 
 
-searchButton.addEventListener('click',()=>{
+searchButton.addEventListener('click', async ()=>{
 
-    console.info(`movie title : ${searchField.value}`)
+   if(searchField.value){
+    
+    console.log(`movie searched : ${searchField.value}`)
+    //hide element
+    initialState.classList.replace("initial-state","hidden")
+    noDataState.classList.add("hidden")
+    //display element
+    populatedStateSearchPage.classList.remove("hidden")
 
-    // fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${searchField.value}&plot=full&type=movie`)
-    fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}&plot=full&type=movie`)
-    .then(response=>response.json())
-    .then(data=> {
+    const response = await fetch(`http://www.omdbapi.com/?apikey=980f8b6e&s=${searchField.value}&plot=full&type=movie`)
 
-            if(searchField.value){
-                //hide element
-                initialState.classList.replace("initial-state","hidden")
-                noDataState.classList.add("hidden")
+    const data = await response.json()
 
-                //display element
-                populatedStateSearchPage.classList.remove("hidden")
+    const searches = data.Search
 
+    const moviesPromise = searches.map(async search => await fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${search.Title}&plot=full&type=movie`)
 
-                // if(data){ // expose object data
-                //     html=  `
-                //         <div id="data" class="data">
-                //             <img id="poster" class="poster" src=${data.Poster}>
-                //             <div>
-                //                 <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
-                //             </div>
-                //             <div>
-                //                 <p>${data.Runtime} ${data.Genre}    
-                //                 <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
-                //                 <label>Watchlist</label>
-                //                 </p>
-                //             </div>
-                //             <p>${data.Plot}</p>
-                //         </div>
-                //     `
-                    
-                //     populatedStateSearchPage.innerHTML= html
-                // }
+    )
 
-              
-                    titles = data.Search.map((film)=>film.Title)
+    const responses = await Promise.all(moviesPromise)
 
-                    for(title of titles){
-                        
-                        fetch(`http://www.omdbapi.com/?apikey=980f8b6e&t=${title}&plot=full&type=movie`)
-                                .then(r=>r.json())
-                                .then(data=>{
-
-                                    localStorage.setItem("title",data.Title)
-
-                                    console.log(localStorage.getItem("title"))
-
-                                                               
-
-                                    html +=  `
-                                    <div id="card" class="card">
-                                        <img id="poster" class="poster" src=${data.Poster}>
-                                        <div>
-                                            <p id="film" class="film">${data.Title} ⭐ ${data.imdbRating} </p>
-                                        </div>
-                                        <div>
-                                            <p>${data.Runtime} ${data.Genre}    
-                                            <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
-                                            <label>Watchlist</label>
-                                            </p>
-                                        </div>
-                                        <p>${data.Plot}</p>
-                                    </div>
-                                `
-                                })
-                    }
-                        
-
-                    populatedStateSearchPage.innerHTML= html
-                
-
-                
-             
-            } else{
-                noDataState.classList.remove("hidden")
-                initialState.classList.replace("initial-state","hidden")
-                populatedStateSearchPage.classList.add("hidden")
-
-                
-                console.log(populatedStateSearchPage.outerHTML)
-
-                console.log(noDataState.outerHTML)
-                
+    const movies = await Promise.all(responses.map(response => response.json()))
 
 
-            }
-    })
+    let html = movies.map(movie => ` 
+                    <div id="movie" class="movie">
+                            <img id="poster" class="poster" src=${movie.Poster}>
+                            <div>
+                                <p id="film" class="film">${movie.Title} ⭐ ${movie.imdbRating} </p>
+                            </div>
+                            <div>
+                                <p>${movie.Runtime} ${data.Genre}    
+                                <input type="image" id="add-button" class="add-button" src="asset/img/add-button.png">
+                                <label>Watchlist</label>
+                                </p>
+                            </div>
+                            <p>${movie.Plot}</p>
+                    </div>
+                `
+).join('')
+    
+
+
+        populatedStateSearchPage.innerHTML= html
+
+    
+
+
+
+
+
+    } else {
+
+        noDataState.classList.remove("hidden")
+        initialState.classList.replace("initial-state","hidden")
+        populatedStateSearchPage.classList.add("hidden")        
+        console.log(populatedStateSearchPage.outerHTML)
+        console.log(noDataState.outerHTML)
+
+
+
+    }
+
 
 })
 
 
+  populatedStateSearchPage.addEventListener('click', (e)=>
 
-populatedStateSearchPage.addEventListener('click',function(e){
+    console.log(e.target)
 
-    console.log(e)
-})
-
+)

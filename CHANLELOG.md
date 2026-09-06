@@ -8,6 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 
+
+## [0.34.0+js] - 2026-09-06
+### Added
+Refactor of result‑collection flow
+
+### Removed
+LocalStorage storage‑layer implementation
+
 ## [0.33.0+js] - 2026-09-05
 ### Added
 Event listener for element populatedStateSearchPage

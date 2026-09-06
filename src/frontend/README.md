@@ -10,9 +10,9 @@ Movie Watchlist to practice real-world front‑end development skills:
 - JavaScript
 
 ### Reasons
-- Pratice of DOM manipulation, event handling, api call
-- Pratice of flexbox 
-- Pratice of HTML semantic
+- Practice of DOM manipulation, event handling, api call
+- Practice of flexbox 
+- Practice of HTML semantic
 
 
 ### Tradeoffs
@@ -73,3 +73,19 @@ Replaced the image-based control with an HTML input button:
 ```html
 <input type="button" value="⭱" id="sort-up" class="sort-up">
 ```
+
+### HTTP Server
+Leverage Node module http-server
+### Reasons
+- VSCode Live Server Preview limitations
+- http-server serve in the browser
+
+### Tradeoffs
+Learning curve
+ 
+### Implementation
+```powershell
+npx http-server
+```
+
+ 
