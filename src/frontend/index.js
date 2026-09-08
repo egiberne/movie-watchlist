@@ -85,5 +85,10 @@ searchButton.addEventListener('click', async ()=>{
   populatedStateSearchPage.addEventListener('click', (e)=> {
     localStorage.setItem(`card-${e.target.id}`,document.getElementById(e.target.id).parentElement.outerHTML)
 
+    for(let i=0;i<localStorage.length;i++){
+        console.log(`storage : ${localStorage.getItem(localStorage.key(i))}`)
+    }
+
+
 
 })
