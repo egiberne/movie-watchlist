@@ -20,7 +20,7 @@ searchButton.addEventListener('click', async ()=>{
 
    if(searchField.value){
     
-    console.log(`movie searched : ${searchField.value}`)
+    // console.log(`movie searched : ${searchField.value}`)
     //hide element
     initialState.classList.replace("initial-state","hidden")
     noDataState.classList.add("hidden")
@@ -71,8 +71,8 @@ searchButton.addEventListener('click', async ()=>{
         noDataState.classList.remove("hidden")
         initialState.classList.replace("initial-state","hidden")
         populatedStateSearchPage.classList.add("hidden")        
-        console.log(populatedStateSearchPage.outerHTML)
-        console.log(noDataState.outerHTML)
+        // console.log(populatedStateSearchPage.outerHTML)
+        // console.log(noDataState.outerHTML)
 
 
 
@@ -85,10 +85,14 @@ searchButton.addEventListener('click', async ()=>{
   populatedStateSearchPage.addEventListener('click', (e)=> {
     localStorage.setItem(`card-${e.target.id}`,document.getElementById(e.target.id).parentElement.outerHTML)
 
-    for(let i=0;i<localStorage.length;i++){
+ 
+
+})
+
+document.getElementById('watchlist-link').addEventListener('click',()=>{
+
+       for(let i=0;i<localStorage.length;i++){
         console.log(`storage : ${localStorage.getItem(localStorage.key(i))}`)
+        
     }
-
-
-
 })

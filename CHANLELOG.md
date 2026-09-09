@@ -9,11 +9,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 
+## [0.39.0] - 2026-09-09
+### Added
+JS control of the watchlist link
+
 ## [0.38.0] - 2026-09-08
 ### Added
 - Instruction content
 - Requirements content
-
  
 ## [0.37.0] - 2026-09-07
 ### Changed
