@@ -5,8 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-Add-Button Styling for Search Page :  padding, colors, icon, hover.
+- Render localStorage content in Watchlist page
+- Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
+
+## [0.38.0] - 2026-09-08
+### Added
+- Instruction content
+- Requirements content
+
+ 
 ## [0.37.0] - 2026-09-07
 ### Changed
 LocalStorage implementation for Watchlist page
