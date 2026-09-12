@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Render localStorage content in Watchlist page
 - Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
+## [0.39.0] - 2026-09-11
+### Added
+- Language context for section instruction in README.md
 
 ## [0.39.0] - 2026-09-09
 ### Added
