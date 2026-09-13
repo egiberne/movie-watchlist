@@ -1,3 +1,25 @@
+
+## Setup HTTP Server
+
+- Install Nodejs http-server 
+
+```bash
+npm install -g http-server 
+cd src\frontend
+http-server
+```
+
+- Usage
+
+`
+http://127.0.0.1:8080/
+
+`
+
+
+
+
+
 # Project Goal
 Movie Watchlist to practice real-world front‑end development skills: 
 - API via JS

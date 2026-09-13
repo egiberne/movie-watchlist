@@ -25,20 +25,6 @@ Yet another movie watchlist website based on Scrimba Solo Project.
 [OMDb](https://www.omdbapi.com/)
 
 
-## HTTP Server
-
-- Without module installation
-
-```powershell
-sl frontend\src
-npx http-server
-```
-
-- Usage
-
-`http://127.0.0.1:8080/`
-
-
 ## Cookbook
 
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/How_to)
