@@ -90,9 +90,13 @@ if(populatedStateSearchPage){
     })
 }
 document.getElementById('watchlist-link').addEventListener('click',()=>{
+    let html
 
        for(let i=0;i<localStorage.length;i++){
         console.log(`storage : ${localStorage.getItem(localStorage.key(i))}`)
         
+        html += localStorage.getItem(localStorage.key(i))
     }
+
+    
 })
