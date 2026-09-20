@@ -88,19 +88,22 @@ if(populatedStateSearchPage){
     
 
     })
+
+
 }
-if(document.getElementById('watchlist-link')){
-        document.getElementById('watchlist-link').addEventListener('click',()=>{
+
+
+window.addEventListener("load", (event) => {
         let html
 
         for(let i=0;i<localStorage.length;i++){
-            console.log(`storage : ${localStorage.getItem(localStorage.key(i))}`)
+            // console.log(`storage : ${localStorage.getItem(localStorage.key(i))}`)
             
             html += localStorage.getItem(localStorage.key(i))
+            console.log(html)
         }
 
+    document.getElementById('watchlist-link').innerHTML=html
         
     })
 
-    document.getElementById('watchlist-link').innerHTML=html
-}
