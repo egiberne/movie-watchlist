@@ -103,7 +103,10 @@ window.addEventListener("load", (event) => {
             console.log(html)
         }
 
-    document.getElementById('watchlist-link').innerHTML=html
+    document.getElementById('empty-watchlist').classList.add("hidden")
+    document.getElementById('populated-watchlist').classList.remove("hidden")       
+
+    document.getElementById('populated-watchlist').innerHTML=html
         
     })
 
