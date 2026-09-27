@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Render localStorage content in Watchlist page
+
 - Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
 
@@ -14,7 +14,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Instuction for Nodejs http-server in README.md
 ### Fixed
 - JS Error for null elements in page after loading
-
 
 ## [0.39.0] - 2026-09-12
 ### Added
