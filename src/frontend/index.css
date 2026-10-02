@@ -155,7 +155,7 @@ border-radius: 2.33px;
     flex-direction: column;
     align-items: center ;
     justify-content: center;
-    background-color:green;
+    /* background-color:green; */
     width: 550px;
     height: 779px;
 }
@@ -164,13 +164,13 @@ border-radius: 2.33px;
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: orange;
+    /* background-color: orange; */
     width: 550px;
     height: 779px;
 }
 
 .populated-state-search-page, .populated-watchlist{
-    background-color: blue;
+    /* background-color: blue; */
     width: 550px;
     
 }

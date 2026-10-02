@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Add-Button Styling for Search Page :  padding, colors, icon, hover.
 
+## [0.41.0] - 2026-10-02
+### Added
 
 ## [0.40.0] - 2026-09-13
 ### Added
